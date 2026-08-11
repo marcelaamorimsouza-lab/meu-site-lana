@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,16 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LANA DEL REY // Universe</title>
+
     <style>
         body {
             background-color: #0a0a0a;
+            max-width: 100vw;
         }
 
         header {
             background-color: #111111;
             color: #FFFFFF;
             text-align: center;
-            max-width: 800px;
             margin: 0 auto;
             padding: 16px;
         }
@@ -22,13 +24,23 @@
         main {
             background-color: #111111;
             color: #aaaaaa;
-            max-width: 800px;
             margin: 0 auto;
             padding: 16px;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         article {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            border: 1px solid #183C63;
+            margin: 16px;
+            gap: 16px;
+            padding: 16px;
+            flex: 1 1 25%;
         }
 
         img {
@@ -45,13 +57,14 @@
 </head>
 
 <body>
-    <header>
 
+    <header>
         <h1>LANA DEL REY</h1>
         <p>INPECÁVEL // QUEM CONHECE SABE</p>
     </header>
 
     <main>
+
         <article>
             <img src="FOTO-de-lana.webp"
                 alt="Foto de Lana Del Rey, cantora e compositora norte-americana.">
@@ -144,6 +157,7 @@
                 <button>❤️ <span>0</span></button>
             </div>
         </article>
+
     </main>
 
     <script>
@@ -170,4 +184,7 @@
         });
     </script>
 
+</body>
+
 </html>
+```
