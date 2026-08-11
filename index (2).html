@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANA DEL REY // Universe</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+        }
+
+        header {
+            background-color: #111111;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        main {
+            background-color: #111111;
+            color: #aaaaaa;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        article {
+            display: flex;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <h1>LANA DEL REY</h1>
+        <p>INPECÁVEL // QUEM CONHECE SABE</p>
+    </header>
+
+    <main>
+        <article>
+            <img src="FOTO-de-lana.webp"
+                alt="Foto de Lana Del Rey, cantora e compositora norte-americana.">
+
+            <div>
+                <h2>As canetadas mais marcantes e os sons que conquistaram o mundo</h2>
+
+                <p class="artigo-autor">Por: MAR</p>
+
+                <p>
+                    Lana Del Rey conquistou milhões de fãs com seu estilo único, sua voz marcante
+                    e suas letras que misturam romance, melancolia e nostalgia. Ao longo da carreira,
+                    a artista criou uma identidade musical inconfundível, combinando elementos do
+                    pop, indie e música alternativa.
+                </p>
+
+                <button>👍 <span>0</span></button>
+                <button>❤️ <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="Summertime Sadness.webp"
+                alt="Capa de um álbum de Lana Del Rey.">
+
+            <div>
+                <h2>Os Maiores Sucessos em Números</h2>
+
+                <p class="artigo-autor">Por: MAR</p>
+
+                <p>
+                    O sucesso de Lana Del Rey não aparece apenas nos fãs e nas redes sociais.
+                    Suas músicas também acumulam milhões de reproduções nas plataformas de
+                    streaming e se tornaram verdadeiros clássicos do pop alternativo.
+                    Dá uma olhada em algumas das faixas mais conhecidas da artista:
+                </p>
+
+                <table border="1"
+                    style="width:100%; border-collapse: collapse; text-align: left; margin-bottom: 20px;">
+
+                    <thead>
+                        <tr style="background-color: #222; color: white;">
+                            <th style="padding: 10px;">Música</th>
+                            <th style="padding: 10px;">Streams / Views Estimados</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td style="padding: 10px;">Summertime Sadness</td>
+                            <td style="padding: 10px;">+2 Bilhões</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px;">Young and Beautiful</td>
+                            <td style="padding: 10px;">+1 Bilhão</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px;">Video Games</td>
+                            <td style="padding: 10px;">+700 Milhões</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px;">Born to Die</td>
+                            <td style="padding: 10px;">+600 Milhões</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px;">West Coast</td>
+                            <td style="padding: 10px;">+400 Milhões</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    Quer ouvir a discografia completa e acompanhar os maiores sucessos
+                    da Lana Del Rey? Acesse a página oficial da artista através do link abaixo:
+                </p>
+
+                <p>
+                    <a href="https://www.youtube.com/@LanaDelRey"
+                        target="_blank"
+                        style="color: #8a2be2; font-weight: bold; text-decoration: none;">
+                        🎵 Clique aqui para ouvir Lana Del Rey no YouTube
+                    </a>
+                </p>
+
+                <button>👍 <span>0</span></button>
+                <button>❤️ <span>0</span></button>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+
+            botao.addEventListener("click", botaoClicado);
+
+            function botaoClicado() {
+                console.log("fui clicado");
+
+                let texto = botao.querySelector("span");
+
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        });
+    </script>
+
+</html>
